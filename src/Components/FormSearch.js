@@ -5,16 +5,13 @@ import { DictionaryContext } from "./UserContext";
 
 const FormSearch = () => {
   const { darkTheme } = useContext(ThemeContext);
-  const { word, setWord, words, setWords, getDefinition } =
-    useContext(DictionaryContext);
+  const { word, setWord, getDefinition } = useContext(DictionaryContext);
 
   const handleChange = (e) => {
     e.preventDefault();
     getDefinition();
     setWord("");
   };
-
-  // console.log({ setWord });
 
   return (
     <div
@@ -25,7 +22,7 @@ const FormSearch = () => {
       }
     >
       <div
-        onSubmit={handleChange}
+        // onSubmit={handleChange}
         className={
           darkTheme
             ? "flex bg-kalas7 items-center h-12 rounded-xl justify-between mx-6"

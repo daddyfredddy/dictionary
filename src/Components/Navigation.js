@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import logo from "../assets/images/logo.svg";
 import { FaToggleOff } from "react-icons/fa";
-import { FaToggleOn } from "react-icons/fa";
+// import { FaToggleOn } from "react-icons/fa";
 import moon from "../assets/images/icon-moon.svg";
 import sun from "../assets/images/sun.svg";
 import { ThemeContext } from "./ContextTheme";

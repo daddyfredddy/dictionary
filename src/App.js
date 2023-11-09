@@ -1,4 +1,3 @@
-// import "./App.css";
 import { useContext} from "react";
 import Navigation from "./Components/Navigation";
 import FormSearch from "./Components/FormSearch";
@@ -6,7 +5,7 @@ import UserCard from "./Components/UserCard";
 import { ThemeContext } from "./Components/ContextTheme";
 
 export const App = () => {
-  const { darkTheme, themeHandler } = useContext(ThemeContext);
+  const { darkTheme } = useContext(ThemeContext);
   return (
     <div
       className={

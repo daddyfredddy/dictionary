@@ -7,12 +7,7 @@ import { DictionaryContext } from "./UserContext";
 
 const UserCard = () => {
   const { darkTheme } = useContext(ThemeContext);
-  const { word, setWord, words, setWords, getDefinition } =
-    useContext(DictionaryContext);
-
-  // const handleSound = () => {
-  //   {words.phonetics.phonetic.audio}
-  // }
+  const { words } = useContext(DictionaryContext);
 
   return (
     <div
